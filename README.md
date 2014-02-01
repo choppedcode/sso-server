@@ -22,7 +22,7 @@ Create a file config.php in the root folder and add the following:
 $conf['db']['hostSpec']='localhost'; //host name
 $conf['db']['dbName']=''; // database name
 $conf['db']['dbUser']=''; // database user
-$conf['db']['dbPass']=''; // database password
+$conf['db']['dbPass']=''; // database password```
 
 ## Changelog
 
