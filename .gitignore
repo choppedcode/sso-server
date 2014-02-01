@@ -1,0 +1,7 @@
+.externalToolBuilders
+.settings
+.project
+.buildpath
+build*
+phpdoc.xml
+config.php
