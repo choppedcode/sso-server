@@ -16,6 +16,15 @@ The way it works is that the participating systems interact with a SSO server an
 
 Install the code in a web server so it's accessible via the net.
 
+Create a database and create the table connections using the following SQL statement:
+
+CREATE TABLE IF NOT EXISTS `connections` (
+  `hash` varchar(64) NOT NULL,
+  `cookie` varchar(64) NOT NULL,
+  `loggedin` varchar(1) NOT NULL,
+  `email` varchar(128) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 Create a file config.php in the root folder and add the following:
 
 ```php
@@ -26,6 +35,9 @@ $conf['db']['dbPass']=''; // database password
 ```
 
 ## Changelog
+
+### 1.0.2
+* Updated documentation to include database creation instructions
 
 ### 1.0.1
 * Beta release
