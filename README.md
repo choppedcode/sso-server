@@ -18,12 +18,14 @@ Install the code in a web server so it's accessible via the net.
 
 Create a database and create the table connections using the following SQL statement:
 
+```php
 CREATE TABLE IF NOT EXISTS `connections` (
   `hash` varchar(64) NOT NULL,
   `cookie` varchar(64) NOT NULL,
   `loggedin` varchar(1) NOT NULL,
   `email` varchar(128) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 
 Create a file config.php in the root folder and add the following:
 
